@@ -1,0 +1,79 @@
+header.flex {
+  justify-content: space-between;
+  padding-inline: 10%;
+  padding-top: 1.2rem;
+  z-index: 11;
+
+  & .sign-in {
+    margin-inline: 1rem;
+  }
+
+  & .links .fa-solid{
+    margin-right: 0.3rem;
+  }
+
+  & .register,
+  & .sign-in {
+    border: 1px solid var(--bodyBG);
+    padding: 0.44rem 1rem;
+    border-radius: 55px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  & .register:hover,
+  & .sign-in:hover,
+  & .register:hover .fa-solid,
+  & .sign-in:hover .fa-solid {
+    background-color: var(--bodyFont);
+    color: var(--blue);
+  }
+
+  & .cart{
+    background-color: var(--bodyFont);
+    color: var(--blue);
+    font-size: 0.9rem;
+    padding: 0.44rem 1.1rem 0.44rem 0.6rem;
+    border-radius: 55px;
+  }
+  & .cart .fa-solid{
+    color: var(--blue);
+  }
+
+  & .products-number{
+    position: absolute;
+    right: 0;
+    top: -5px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background-color: red ;
+    height: 22px;
+    width: 22px;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  /* ---------------------- #logo . --------------------- */
+  & .logo{
+    color: var(--bodyFont);
+  }
+  & .fa-bag-shopping{
+font-size: 20px;
+color: var(--bodyFont);
+  }
+}
+.scroll-down{
+  position: fixed;
+  right: 0;
+  left: 0;
+  background-color: gray;
+  color: #fff;
+  & p,span{
+    color: #fff;
+    margin-bottom: 5px;
+    z-index: 11;
+    opacity: 0.7;
+  }
+}

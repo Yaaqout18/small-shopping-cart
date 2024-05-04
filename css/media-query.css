@@ -1,0 +1,40 @@
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ #Header Media-query . ^^^^^^^^^^^^^^^^^^^^ */
+@media (width <600px){
+
+  header.flex{
+    justify-content: center;
+    padding-inline: 0;
+
+
+    .logo{
+      display: none;
+    }
+    
+    .links{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+  main{
+    width: 100%;
+  }
+  main h2.pre-title{
+    margin: 2.3rem  0 2rem 0;
+    font-size: 1.4rem;
+  }
+}
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^ #Footer Media query . ^^^^^^^^^^^^^^^^^^^^^^^^*/
+@media(max-width:769px){
+  .footer-sec{
+    width: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+@media(max-width:556px){
+  .footer-sec{
+    width: 100%;
+  }
+}
